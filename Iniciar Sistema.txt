@@ -1,0 +1,27 @@
+BACKEND ( API NODE.js ) 
+
+TERMINAL > node index.js
+
+FRONTEND ( VITE + REACT )
+
+TERMINAL > npm run dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Preferences: Open Settings (JSON)

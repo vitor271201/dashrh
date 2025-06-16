@@ -1,0 +1,234 @@
+/* Fundo branco para body e raiz */
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fff;
+}
+
+/* Container da página: flex coluna */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* Header fixo no topo */
+.dashboard-header,
+.custom-navbar-border {
+  border-bottom: 1px solid #cccccc;
+  /* linha mais escura e consistente */
+}
+
+/* Logo alinhada à esquerda */
+.dashboard-logo {
+  height: 60px;
+  margin-right: 0;
+}
+
+/* Área de pesquisa no Header */
+.dashboard-search-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 100%;
+}
+
+/* Ícones do Header */
+.search-icon-left,
+.search-icon-right {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+/* Input de pesquisa */
+.dashboard-search {
+  flex-grow: 1;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #919191;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+
+/* Conteúdo principal e Sidebar */
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #fff;
+  border-right: 1px solid #cccccc;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Seção de perfil */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 15px;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  font-size: 0.8rem;
+  color: #212529;
+}
+
+.profile-info strong {
+  display: block;
+  font-weight: 600;
+}
+
+.profile-info span {
+  color: #6c757d;
+  font-size: 0.75rem;
+}
+
+/* Navegação lateral */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sidebar-nav button {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  margin: 4px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #000;
+  transition: background-color 0.2s;
+  border-radius: 4px;
+}
+
+/* Hover no botão mantém fundo branco e texto preto */
+.sidebar-nav button:hover,
+.sidebar-nav button:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Ícones dos botões */
+.sidebar-nav .icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Links do Sidebar (caso use Link em vez de button) */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar-link:hover {
+  color: #6f42c1;
+  /* texto roxo ao passar o mouse */
+}
+
+/* Conteúdo principal (área direita) */
+.dashboard-main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  gap: 30px;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+/* Blocos informativos */
+.dashboard-blocks {
+  display: flex;
+  gap: 80px;
+}
+
+.block {
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  width: 180px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+/* Container extra abaixo dos blocos */
+.dashboard-extra {
+  height: 30vh;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Container inferior com 60% e 40% */
+.dashboard-lower-section {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.dashboard-lower-60,
+.dashboard-lower-40 {
+  height: 30vh;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-lower-60 {
+  width: 60%;
+}
+
+.dashboard-lower-40 {
+  width: 40%;
+}
